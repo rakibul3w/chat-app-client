@@ -63,7 +63,7 @@ export default function Register() {
         event.preventDefault();
         if (handleValidation()) {
             const { email, username, password } = values;
-            const { data } = await axios.post('http://localhost:5000/api/auth/register', {
+            const { data } = await axios.post('https://salty-eyrie-27851.herokuapp.com/api/auth/register', {
                 username,
                 email,
                 password,

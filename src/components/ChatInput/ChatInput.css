@@ -1,0 +1,83 @@
+.input-main-container {
+    width: 57%;
+    /* display: grid;
+    grid-template-columns: 80% 6%; */
+    /* background-color: #080420; */
+    background-color: transparent;
+    /* align-content: flex-end; */
+    position: absolute;
+    bottom: 60px;
+    /* padding: 0 2rem; */
+
+}
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .input-main-container{
+        /* padding: 0 1rem; */
+        width: 52%;
+        gap: 1rem;
+    }
+}
+
+.button-container {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end;
+    color: white;
+    gap: 1rem;
+
+}
+
+.input-container {
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #ffffff34; */
+    background-color: transparent;
+    padding: 0 33px;
+}
+
+input {
+    width: 90%;
+    /* height: 60%; */
+    background-color: transparent;
+    color: white;
+    border: none;
+    /* padding-left: 1rem; */
+    font-size: 1.2rem;
+    /* color: white; */
+}
+
+input::selection {
+    background-color: #9a86f3;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a86f3;
+    border: none;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    button {
+        padding: 0.3rem 1rem;
+    }
+
+    svg {
+        font-size: 1rem;
+    }
+}
+
+svg {
+    font-size: 2rem;
+}

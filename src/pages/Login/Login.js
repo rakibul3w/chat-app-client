@@ -41,7 +41,7 @@ export default function Login() {
         event.preventDefault();
         if (validateForm()) {
             const { username, password } = values;
-            const { data } = await axios.post('http://localhost:5000/api/auth/login', {
+            const { data } = await axios.post('https://salty-eyrie-27851.herokuapp.com/api/auth/login', {
                 username,
                 password,
             });
